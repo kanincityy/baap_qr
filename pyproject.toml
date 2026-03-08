@@ -1,0 +1,10 @@
+[project]
+name = "baap-qr"
+version = "0.1.0"
+description = "A landing page for my BAAP Poster Presentation"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.55.0",
+    "Pillow>=10.0.0"
+]
