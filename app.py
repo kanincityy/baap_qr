@@ -173,7 +173,7 @@ title = "MSc Language Sciences \n\n University College London"
 intro_text = "I'm a speech and language researcher specialising in the acoustic-phonetic analysis of emotional speech. My work bridges computational methods and phonetic theory, investigating how noise degrades the subtle articulatory and prosodic cues that encode emotion. I'm particularly interested in developing phonetically-informed approaches to robust speech processing."
 linkedin_url = "https://www.linkedin.com/in/tatiana-limonova/"
 github_url = "https://github.com/kanincityy"
-email_url = "tatiana.limonova.23@ucl.ac.uk"  # Replace with your email
+email_url = "tatianalimonova23@gmail.com  
 profile_img_path = os.path.join("assets", "profile.png")
 pdf_path = os.path.join("assets", "article.pdf")
 
