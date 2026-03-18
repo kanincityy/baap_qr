@@ -202,31 +202,12 @@ st.markdown('<h2 class="section-header">3-page conference paper | BAAP 2026</h2>
 
 # --- PDF Viewer ---
 if os.path.exists(pdf_path):
-    with open(pdf_path, "rb") as f:
-        pdf_bytes = f.read()
-        base64_pdf = base64.b64encode(pdf_bytes).decode('utf-8')
+    with open(pdf_path, "rb") as pdf_file:
+        pdf_bytes = pdf_file.read()
     
-    # Embedding PDF in HTML with clean academic border
-    pdf_display = f'''
-    <div style="border: 2px solid #E0E0E0; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); padding: 0; margin-bottom: 20px; border-radius: 8px; overflow: hidden;">
-        <iframe src="data:application/pdf;base64,{base64_pdf}#toolbar=0" width="100%" height="800" type="application/pdf" style="border: none;"></iframe>
-    </div>
-    '''
-    st.markdown(pdf_display, unsafe_allow_html=True)
-    
-    # Center the Download Button
-    col_dl1, col_dl2, col_dl3 = st.columns([1, 1, 1])
-    with col_dl2:
-        st.download_button(
-            label="📄 Download Full Article (PDF)",
-            data=pdf_bytes,
-            file_name="article.pdf",
-            mime="application/pdf"
-        )
-else:
-    st.info("💡 Place a PDF named `article.pdf` in the `assets/` folder to view it here.")
-    st.markdown(f'''
-    <div style="border: 2px solid #E0E0E0; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); background-color: #F4F4F4; border-radius: 8px; height: 350px; display: flex; align-items: center; justify-content: center; margin-bottom: 50px;">
-        <p style="font-weight: 600; font-size: 1.2rem; color: #555555;">[ PDF Placeholder ]</p>
-    </div>
-    ''', unsafe_allow_html=True)
+    st.download_button(
+        label="📄 Download Research Paper (PDF)",
+        data=pdf_bytes,  # ← Now it exists!
+        file_name="Limonova_BAAP_2026.pdf",
+        mime="application/pdf"
+    )
