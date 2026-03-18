@@ -235,7 +235,7 @@ st.markdown('''
         Activation vs. Valence in Noise: Diagnosing the Phonetic Vulnerabilities of an SER System
     </h3>
     <p style="color: #666; font-size: 1rem; margin-bottom: 25px; line-height: 1.6;">
-        This paper systematically investigates how SER systems fail under noise, revealing that models default to predicting "Calm" at café noise levels (5dB SNR), with 81% of Sad samples misclassified—a critical vulnerability for real-world deployment.
+        This paper systematically investigates how Speech Emotion Recognition (SER) systems fail under noise, revealing that models default to predicting "Calm" at café noise levels (5dB SNR), with 81% of Sad samples misclassified, a critical vulnerability for real-world deployment.
     </p>
 </div>
 ''', unsafe_allow_html=True)
